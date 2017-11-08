@@ -43,15 +43,15 @@ DOAMIN-SUFFIX,blogspot.com,Proxy,force-remote-dns
 DOMAIN-SUFFIX,telegra.ph,Proxy,force-remote-dns
 DOMAIN-SUFFIX,telegram.org,Proxy,force-remote-dns
 DOMAIN-SUFFIX,telegram.me,Proxy,force-remote-dns
-IP-CIDR,91.108.56.0/22,Proxy,force-remote-dns
-IP-CIDR,91.108.4.0/22,Proxy,force-remote-dns
-IP-CIDR,91.108.8.0/22,Proxy,force-remote-dns
-IP-CIDR,91.108.12.0/22,Proxy,force-remote-dns
-IP-CIDR,109.239.140.0/24,Proxy,force-remote-dns
-IP-CIDR,149.154.164.0/22,Proxy,force-remote-dns
-IP-CIDR,149.154.172.0/22,Proxy,force-remote-dns
-IP-CIDR,149.154.160.0/20,Proxy,force-remote-dns
-IP-CIDR,149.154.168.0/22,Proxy,force-remote-dns
+IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,91.108.4.0/22,no-resolve
+IP-CIDR,91.108.8.0/22,no-resolve
+IP-CIDR,91.108.12.0/22,no-resolve
+IP-CIDR,109.239.140.0/24,no-resolve
+IP-CIDR,149.154.164.0/22,no-resolve
+IP-CIDR,149.154.172.0/22,no-resolve
+IP-CIDR,149.154.160.0/20,no-resolve
+IP-CIDR,149.154.168.0/22,no-resolve
 
 GEOIP,CN,DIRECT
 FINAL,DIRECT
