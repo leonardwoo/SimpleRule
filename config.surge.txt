@@ -3,11 +3,11 @@
 [General]
 # warning, notify, info, verbose
 loglevel = notify
+bypass-system = true
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, localhost, *.local
 dns-server = 119.29.29.29
-skip-Proxy = 127.0.0.1, 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, localhost, *.local
 ipv6 = true
 allow-wifi-access = false
-bypass-system = true
 
 [Proxy]
 Proxy = socks5, 127.0.0.1, 1080,,
@@ -17,41 +17,37 @@ Proxy = socks5, 127.0.0.1, 1080,,
 DOMAIN-SUFFIX,apple.com,DIRECT
 DOMAIN-SUFFIX,icloud.com,DIRECT
 DOMAIN-KEYWORD,itunes,DIRECT
-
 # SimpleCN
 DOMAIN-KEYWORD,-cn,DIRECT
 DOMAIN-SUFFIX,cn,DIRECT
-
 #Facebook & Instagram
 DOMAIN-KEYWORD,instagram,Proxy,force-remote-dns
 DOMAIN-KEYWORD,facebook,Proxy,force-remote-dns
 DOMAIN-SUFFIX,fbcdn.net,Proxy,force-remote-dns
-
+DOMAIN-SUFFIX,fb.com,Proxy,force-remote-dns
 # Twitter
 DOMAIN-SUFFIX,twitter.com,Proxy,force-remote-dns
-
+DOMAIN-SUFFIX,twimg.com,Proxy,force-remote-dns
 #Yahoo & Tumblr
 DOMAIN-SUFFIX,yahoo.com,Proxy
 DOMAIN-SUFFIX,tumblr.com,Proxy,force-remote-dns
-
 # Google
 DOMAIN-KEYWORD,google,Proxy,force-remote-dns
-DOAMIN-KEYWORD,youtube,Proxy,force-remote-dns
-DOAMIN-SUFFIX,blogspot.com,Proxy,force-remote-dns
-
+DOMAIN-KEYWORD,youtube,Proxy,force-remote-dns
+DOMAIN-SUFFIX,blogspot.com,Proxy,force-remote-dns
 # Telegram
 DOMAIN-SUFFIX,telegra.ph,Proxy,force-remote-dns
 DOMAIN-SUFFIX,telegram.org,Proxy,force-remote-dns
 DOMAIN-SUFFIX,telegram.me,Proxy,force-remote-dns
-IP-CIDR,91.108.56.0/22,no-resolve
-IP-CIDR,91.108.4.0/22,no-resolve
-IP-CIDR,91.108.8.0/22,no-resolve
-IP-CIDR,91.108.12.0/22,no-resolve
-IP-CIDR,109.239.140.0/24,no-resolve
-IP-CIDR,149.154.164.0/22,no-resolve
-IP-CIDR,149.154.172.0/22,no-resolve
-IP-CIDR,149.154.160.0/20,no-resolve
-IP-CIDR,149.154.168.0/22,no-resolve
+IP-CIDR,91.108.56.0/22,Proxy,no-resolve
+IP-CIDR,91.108.4.0/22,Proxy,no-resolve
+IP-CIDR,91.108.8.0/22,Proxy,no-resolve
+IP-CIDR,91.108.12.0/22,Proxy,no-resolve
+IP-CIDR,109.239.140.0/24,Proxy,no-resolve
+IP-CIDR,149.154.164.0/22,Proxy,no-resolve
+IP-CIDR,149.154.172.0/22,Proxy,no-resolve
+IP-CIDR,149.154.160.0/20,Proxy,no-resolve
+IP-CIDR,149.154.168.0/22,Proxy,no-resolve
 
 GEOIP,CN,DIRECT
 FINAL,DIRECT
